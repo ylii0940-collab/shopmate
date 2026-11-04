@@ -1,0 +1,939 @@
+{
+  "version": "shopmate-judgements-v2-catalog40",
+  "scope": "Authored synthetic offline relevance judgements; no real users, online A/B or business uplift.",
+  "createdAt": "2026-11-03T06:21:36.860Z",
+  "catalogSize": 40,
+  "queryCount": 12,
+  "results": [
+    {
+      "strategy": "rating",
+      "name": "A · 评分优先",
+      "rows": [
+        {
+          "id": "q01",
+          "text": "100美元以内，适合坐飞机的降噪耳机",
+          "market": "US",
+          "slice": "出行耳机",
+          "grades": {
+            "p1": 3,
+            "p9": 3,
+            "p10": 2,
+            "p13": 3,
+            "p14": 2,
+            "p17": 3,
+            "p18": 3,
+            "p22": 2
+          },
+          "note": "头戴与耳塞均相关；优先长途佩戴场景，保留多品牌选择。",
+          "ids": [
+            "p18",
+            "p1",
+            "p13"
+          ],
+          "ndcg": 1,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 3
+        },
+        {
+          "id": "q02",
+          "text": "Headphones under $100 for travel",
+          "market": "US",
+          "slice": "英文 / 头戴",
+          "grades": {
+            "p1": 3,
+            "p9": 3,
+            "p13": 3,
+            "p17": 3,
+            "p18": 3,
+            "p19": 1
+          },
+          "note": "明确headphones，耳塞不是本例目标类型。",
+          "ids": [
+            "p18",
+            "p1",
+            "p13"
+          ],
+          "ndcg": 1,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 3
+        },
+        {
+          "id": "q03",
+          "text": "送朋友的礼物，预算50美元",
+          "market": "US",
+          "slice": "泛需求 / 送礼",
+          "grades": {
+            "p2": 3,
+            "p4": 2,
+            "p6": 2,
+            "p7": 3,
+            "p15": 2,
+            "p16": 3,
+            "p19": 2,
+            "p21": 2,
+            "p25": 3,
+            "p27": 3,
+            "p36": 2,
+            "p39": 3
+          },
+          "note": "有gift标记的可售商品相关；偏好适合作为独立礼物的灯和音箱。",
+          "ids": [
+            "p4",
+            "p16",
+            "p27"
+          ],
+          "ndcg": 0.7318407279869963,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 3
+        },
+        {
+          "id": "q04",
+          "text": "想买便携相机，预算S$180",
+          "market": "SG",
+          "slice": "新加坡 / 相机",
+          "grades": {
+            "p3": 3,
+            "p11": 2,
+            "p29": 3,
+            "p30": 2
+          },
+          "note": "两款均符合预算，优先成像规格更完整的口袋相机。",
+          "ids": [
+            "p3",
+            "p29",
+            "p11"
+          ],
+          "ndcg": 1,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 1
+        },
+        {
+          "id": "q05",
+          "text": "防水便携音箱，预算50美元",
+          "market": "US",
+          "slice": "防水 / 音箱",
+          "grades": {
+            "p2": 3,
+            "p16": 3,
+            "p25": 3
+          },
+          "note": "只保留音箱；防水为硬约束。",
+          "ids": [
+            "p16",
+            "p2",
+            "p25"
+          ],
+          "ndcg": 1,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        },
+        {
+          "id": "q06",
+          "text": "推荐50英镑以内的耳机",
+          "market": "UK",
+          "slice": "英国 / 预算",
+          "grades": {
+            "p6": 2,
+            "p10": 3,
+            "p19": 2,
+            "p21": 2
+          },
+          "note": "按演示固定汇率计算；ANC耳塞可作为升级选择。",
+          "ids": [
+            "p10",
+            "p6",
+            "p19"
+          ],
+          "ndcg": 1,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 1
+        },
+        {
+          "id": "q07",
+          "text": "Mau beli speaker, budget Rp1200000",
+          "market": "ID",
+          "slice": "印尼 / 音箱",
+          "grades": {
+            "p2": 3,
+            "p12": 2,
+            "p16": 3,
+            "p25": 3,
+            "p26": 3,
+            "p27": 2
+          },
+          "note": "三款均在本地预算内，便携音箱为常规候选。",
+          "ids": [
+            "p26",
+            "p12",
+            "p16"
+          ],
+          "ndcg": 0.8308103365909342,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        },
+        {
+          "id": "q08",
+          "text": "旅行快充充电宝，预算60美元",
+          "market": "US",
+          "slice": "快充 / 数码",
+          "grades": {
+            "p5": 3,
+            "p33": 3,
+            "p34": 3
+          },
+          "note": "三款符合；比较便携与容量，标注不参考策略分数。",
+          "ids": [
+            "p5",
+            "p34",
+            "p33"
+          ],
+          "ndcg": 1,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        },
+        {
+          "id": "q09",
+          "text": "Sonar headphones under $100",
+          "market": "US",
+          "slice": "品牌指定",
+          "grades": {
+            "p13": 3,
+            "p17": 3
+          },
+          "note": "明确指定品牌；两款Sonar头戴均满足预算，其他品牌不可替代。",
+          "ids": [
+            "p13",
+            "p17"
+          ],
+          "ndcg": 1,
+          "precision": 0.6666666666666666,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 1
+        },
+        {
+          "id": "q10",
+          "text": "Headphones under $20",
+          "market": "US",
+          "slice": "预算无解",
+          "grades": {},
+          "note": "目录没有符合预算的耳机，应明确无结果。",
+          "ids": [],
+          "ndcg": null,
+          "precision": null,
+          "recall": null,
+          "violations": 0,
+          "empty": true,
+          "expectedEmpty": true,
+          "brands": 0
+        },
+        {
+          "id": "q11",
+          "text": "防水包，预算50美元",
+          "market": "ID",
+          "slice": "市场不可达",
+          "grades": {},
+          "note": "防水包不支持ID市场，不能承诺可售。",
+          "ids": [],
+          "ndcg": null,
+          "precision": null,
+          "recall": null,
+          "violations": 0,
+          "empty": true,
+          "expectedEmpty": true,
+          "brands": 0
+        },
+        {
+          "id": "q12",
+          "text": "headphons under $100 for travel",
+          "market": "US",
+          "slice": "拼写归一",
+          "grades": {
+            "p1": 3,
+            "p9": 3,
+            "p13": 3,
+            "p17": 3,
+            "p18": 3,
+            "p19": 1
+          },
+          "note": "拼写纠正后应与标准headphones查询一致。",
+          "ids": [
+            "p18",
+            "p1",
+            "p13"
+          ],
+          "ndcg": 1,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 3
+        }
+      ],
+      "metrics": {
+        "ndcg": 0.9562651064577932,
+        "precision": 0.9666666666666666,
+        "recall": 1,
+        "constraintPass": 1,
+        "emptyAccuracy": 1,
+        "meanBrands": 1.75
+      },
+      "count": 12
+    },
+    {
+      "strategy": "match",
+      "name": "B · 需求匹配",
+      "rows": [
+        {
+          "id": "q01",
+          "text": "100美元以内，适合坐飞机的降噪耳机",
+          "market": "US",
+          "slice": "出行耳机",
+          "grades": {
+            "p1": 3,
+            "p9": 3,
+            "p10": 2,
+            "p13": 3,
+            "p14": 2,
+            "p17": 3,
+            "p18": 3,
+            "p22": 2
+          },
+          "note": "头戴与耳塞均相关；优先长途佩戴场景，保留多品牌选择。",
+          "ids": [
+            "p1",
+            "p10",
+            "p14"
+          ],
+          "ndcg": 0.6967307005844323,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        },
+        {
+          "id": "q02",
+          "text": "Headphones under $100 for travel",
+          "market": "US",
+          "slice": "英文 / 头戴",
+          "grades": {
+            "p1": 3,
+            "p9": 3,
+            "p13": 3,
+            "p17": 3,
+            "p18": 3,
+            "p19": 1
+          },
+          "note": "明确headphones，耳塞不是本例目标类型。",
+          "ids": [
+            "p1",
+            "p13",
+            "p9"
+          ],
+          "ndcg": 1,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        },
+        {
+          "id": "q03",
+          "text": "送朋友的礼物，预算50美元",
+          "market": "US",
+          "slice": "泛需求 / 送礼",
+          "grades": {
+            "p2": 3,
+            "p4": 2,
+            "p6": 2,
+            "p7": 3,
+            "p15": 2,
+            "p16": 3,
+            "p19": 2,
+            "p21": 2,
+            "p25": 3,
+            "p27": 3,
+            "p36": 2,
+            "p39": 3
+          },
+          "note": "有gift标记的可售商品相关；偏好适合作为独立礼物的灯和音箱。",
+          "ids": [
+            "p6",
+            "p2",
+            "p21"
+          ],
+          "ndcg": 0.5977610919804944,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 3
+        },
+        {
+          "id": "q04",
+          "text": "想买便携相机，预算S$180",
+          "market": "SG",
+          "slice": "新加坡 / 相机",
+          "grades": {
+            "p3": 3,
+            "p11": 2,
+            "p29": 3,
+            "p30": 2
+          },
+          "note": "两款均符合预算，优先成像规格更完整的口袋相机。",
+          "ids": [
+            "p11",
+            "p3",
+            "p30"
+          ],
+          "ndcg": 0.6903187831542703,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        },
+        {
+          "id": "q05",
+          "text": "防水便携音箱，预算50美元",
+          "market": "US",
+          "slice": "防水 / 音箱",
+          "grades": {
+            "p2": 3,
+            "p16": 3,
+            "p25": 3
+          },
+          "note": "只保留音箱；防水为硬约束。",
+          "ids": [
+            "p2",
+            "p16",
+            "p25"
+          ],
+          "ndcg": 1,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        },
+        {
+          "id": "q06",
+          "text": "推荐50英镑以内的耳机",
+          "market": "UK",
+          "slice": "英国 / 预算",
+          "grades": {
+            "p6": 2,
+            "p10": 3,
+            "p19": 2,
+            "p21": 2
+          },
+          "note": "按演示固定汇率计算；ANC耳塞可作为升级选择。",
+          "ids": [
+            "p6",
+            "p19",
+            "p10"
+          ],
+          "ndcg": 0.8075588805057204,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 1
+        },
+        {
+          "id": "q07",
+          "text": "Mau beli speaker, budget Rp1200000",
+          "market": "ID",
+          "slice": "印尼 / 音箱",
+          "grades": {
+            "p2": 3,
+            "p12": 2,
+            "p16": 3,
+            "p25": 3,
+            "p26": 3,
+            "p27": 2
+          },
+          "note": "三款均在本地预算内，便携音箱为常规候选。",
+          "ids": [
+            "p16",
+            "p2",
+            "p12"
+          ],
+          "ndcg": 0.8659203639934981,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        },
+        {
+          "id": "q08",
+          "text": "旅行快充充电宝，预算60美元",
+          "market": "US",
+          "slice": "快充 / 数码",
+          "grades": {
+            "p5": 3,
+            "p33": 3,
+            "p34": 3
+          },
+          "note": "三款符合；比较便携与容量，标注不参考策略分数。",
+          "ids": [
+            "p5",
+            "p33",
+            "p34"
+          ],
+          "ndcg": 1,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        },
+        {
+          "id": "q09",
+          "text": "Sonar headphones under $100",
+          "market": "US",
+          "slice": "品牌指定",
+          "grades": {
+            "p13": 3,
+            "p17": 3
+          },
+          "note": "明确指定品牌；两款Sonar头戴均满足预算，其他品牌不可替代。",
+          "ids": [
+            "p13",
+            "p17"
+          ],
+          "ndcg": 1,
+          "precision": 0.6666666666666666,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 1
+        },
+        {
+          "id": "q10",
+          "text": "Headphones under $20",
+          "market": "US",
+          "slice": "预算无解",
+          "grades": {},
+          "note": "目录没有符合预算的耳机，应明确无结果。",
+          "ids": [],
+          "ndcg": null,
+          "precision": null,
+          "recall": null,
+          "violations": 0,
+          "empty": true,
+          "expectedEmpty": true,
+          "brands": 0
+        },
+        {
+          "id": "q11",
+          "text": "防水包，预算50美元",
+          "market": "ID",
+          "slice": "市场不可达",
+          "grades": {},
+          "note": "防水包不支持ID市场，不能承诺可售。",
+          "ids": [],
+          "ndcg": null,
+          "precision": null,
+          "recall": null,
+          "violations": 0,
+          "empty": true,
+          "expectedEmpty": true,
+          "brands": 0
+        },
+        {
+          "id": "q12",
+          "text": "headphons under $100 for travel",
+          "market": "US",
+          "slice": "拼写归一",
+          "grades": {
+            "p1": 3,
+            "p9": 3,
+            "p13": 3,
+            "p17": 3,
+            "p18": 3,
+            "p19": 1
+          },
+          "note": "拼写纠正后应与标准headphones查询一致。",
+          "ids": [
+            "p1",
+            "p13",
+            "p9"
+          ],
+          "ndcg": 1,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        }
+      ],
+      "metrics": {
+        "ndcg": 0.8658289820218416,
+        "precision": 0.9666666666666666,
+        "recall": 1,
+        "constraintPass": 1,
+        "emptyAccuracy": 1,
+        "meanBrands": 1.5833333333333333
+      },
+      "count": 12
+    },
+    {
+      "strategy": "diverse",
+      "name": "C · 匹配 + 品牌多样性",
+      "rows": [
+        {
+          "id": "q01",
+          "text": "100美元以内，适合坐飞机的降噪耳机",
+          "market": "US",
+          "slice": "出行耳机",
+          "grades": {
+            "p1": 3,
+            "p9": 3,
+            "p10": 2,
+            "p13": 3,
+            "p14": 2,
+            "p17": 3,
+            "p18": 3,
+            "p22": 2
+          },
+          "note": "头戴与耳塞均相关；优先长途佩戴场景，保留多品牌选择。",
+          "ids": [
+            "p1",
+            "p14",
+            "p13"
+          ],
+          "ndcg": 0.8308103365909342,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 3
+        },
+        {
+          "id": "q02",
+          "text": "Headphones under $100 for travel",
+          "market": "US",
+          "slice": "英文 / 头戴",
+          "grades": {
+            "p1": 3,
+            "p9": 3,
+            "p13": 3,
+            "p17": 3,
+            "p18": 3,
+            "p19": 1
+          },
+          "note": "明确headphones，耳塞不是本例目标类型。",
+          "ids": [
+            "p1",
+            "p13",
+            "p9"
+          ],
+          "ndcg": 1,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        },
+        {
+          "id": "q03",
+          "text": "送朋友的礼物，预算50美元",
+          "market": "US",
+          "slice": "泛需求 / 送礼",
+          "grades": {
+            "p2": 3,
+            "p4": 2,
+            "p6": 2,
+            "p7": 3,
+            "p15": 2,
+            "p16": 3,
+            "p19": 2,
+            "p21": 2,
+            "p25": 3,
+            "p27": 3,
+            "p36": 2,
+            "p39": 3
+          },
+          "note": "有gift标记的可售商品相关；偏好适合作为独立礼物的灯和音箱。",
+          "ids": [
+            "p6",
+            "p2",
+            "p21"
+          ],
+          "ndcg": 0.5977610919804944,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 3
+        },
+        {
+          "id": "q04",
+          "text": "想买便携相机，预算S$180",
+          "market": "SG",
+          "slice": "新加坡 / 相机",
+          "grades": {
+            "p3": 3,
+            "p11": 2,
+            "p29": 3,
+            "p30": 2
+          },
+          "note": "两款均符合预算，优先成像规格更完整的口袋相机。",
+          "ids": [
+            "p11",
+            "p30",
+            "p3"
+          ],
+          "ndcg": 0.6497722977469499,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        },
+        {
+          "id": "q05",
+          "text": "防水便携音箱，预算50美元",
+          "market": "US",
+          "slice": "防水 / 音箱",
+          "grades": {
+            "p2": 3,
+            "p16": 3,
+            "p25": 3
+          },
+          "note": "只保留音箱；防水为硬约束。",
+          "ids": [
+            "p2",
+            "p16",
+            "p25"
+          ],
+          "ndcg": 1,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        },
+        {
+          "id": "q06",
+          "text": "推荐50英镑以内的耳机",
+          "market": "UK",
+          "slice": "英国 / 预算",
+          "grades": {
+            "p6": 2,
+            "p10": 3,
+            "p19": 2,
+            "p21": 2
+          },
+          "note": "按演示固定汇率计算；ANC耳塞可作为升级选择。",
+          "ids": [
+            "p6",
+            "p21",
+            "p19"
+          ],
+          "ndcg": 0.6151177610114408,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        },
+        {
+          "id": "q07",
+          "text": "Mau beli speaker, budget Rp1200000",
+          "market": "ID",
+          "slice": "印尼 / 音箱",
+          "grades": {
+            "p2": 3,
+            "p12": 2,
+            "p16": 3,
+            "p25": 3,
+            "p26": 3,
+            "p27": 2
+          },
+          "note": "三款均在本地预算内，便携音箱为常规候选。",
+          "ids": [
+            "p16",
+            "p2",
+            "p27"
+          ],
+          "ndcg": 0.8659203639934981,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 3
+        },
+        {
+          "id": "q08",
+          "text": "旅行快充充电宝，预算60美元",
+          "market": "US",
+          "slice": "快充 / 数码",
+          "grades": {
+            "p5": 3,
+            "p33": 3,
+            "p34": 3
+          },
+          "note": "三款符合；比较便携与容量，标注不参考策略分数。",
+          "ids": [
+            "p5",
+            "p34",
+            "p33"
+          ],
+          "ndcg": 1,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        },
+        {
+          "id": "q09",
+          "text": "Sonar headphones under $100",
+          "market": "US",
+          "slice": "品牌指定",
+          "grades": {
+            "p13": 3,
+            "p17": 3
+          },
+          "note": "明确指定品牌；两款Sonar头戴均满足预算，其他品牌不可替代。",
+          "ids": [
+            "p13",
+            "p17"
+          ],
+          "ndcg": 1,
+          "precision": 0.6666666666666666,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 1
+        },
+        {
+          "id": "q10",
+          "text": "Headphones under $20",
+          "market": "US",
+          "slice": "预算无解",
+          "grades": {},
+          "note": "目录没有符合预算的耳机，应明确无结果。",
+          "ids": [],
+          "ndcg": null,
+          "precision": null,
+          "recall": null,
+          "violations": 0,
+          "empty": true,
+          "expectedEmpty": true,
+          "brands": 0
+        },
+        {
+          "id": "q11",
+          "text": "防水包，预算50美元",
+          "market": "ID",
+          "slice": "市场不可达",
+          "grades": {},
+          "note": "防水包不支持ID市场，不能承诺可售。",
+          "ids": [],
+          "ndcg": null,
+          "precision": null,
+          "recall": null,
+          "violations": 0,
+          "empty": true,
+          "expectedEmpty": true,
+          "brands": 0
+        },
+        {
+          "id": "q12",
+          "text": "headphons under $100 for travel",
+          "market": "US",
+          "slice": "拼写归一",
+          "grades": {
+            "p1": 3,
+            "p9": 3,
+            "p13": 3,
+            "p17": 3,
+            "p18": 3,
+            "p19": 1
+          },
+          "note": "拼写纠正后应与标准headphones查询一致。",
+          "ids": [
+            "p1",
+            "p13",
+            "p9"
+          ],
+          "ndcg": 1,
+          "precision": 1,
+          "recall": 1,
+          "violations": 0,
+          "empty": false,
+          "expectedEmpty": false,
+          "brands": 2
+        }
+      ],
+      "metrics": {
+        "ndcg": 0.8559381851323318,
+        "precision": 0.9666666666666666,
+        "recall": 1,
+        "constraintPass": 1,
+        "emptyAccuracy": 1,
+        "meanBrands": 1.8333333333333333
+      },
+      "count": 12
+    }
+  ]
+}

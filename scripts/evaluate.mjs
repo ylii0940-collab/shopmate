@@ -1,0 +1,12 @@
+import {mkdir,writeFile} from 'node:fs/promises';
+import {analyze} from '../dist/engine.mjs';
+import {PRODUCTS} from '../dist/data.mjs';
+import {evaluateCases,STRATEGIES} from '../dist/search.mjs';
+import {EVAL_CASES,EVAL_VERSION} from '../dist/eval-data.mjs';
+const split=process.argv.includes('--holdout')?'holdout':'dev';
+const selected=EVAL_CASES.filter(c=>c.split===split);
+const results=Object.keys(STRATEGIES).map(strategy=>({strategy,name:STRATEGIES[strategy].name,...evaluateCases(selected,analyze,PRODUCTS,{strategy})}));
+const report={version:EVAL_VERSION,scope:'Synthetic rubric offline relevance judgements; no real users, online A/B or business uplift.',createdAt:new Date().toISOString(),catalogSize:PRODUCTS.length,queryCount:selected.length,totalQueryCount:EVAL_CASES.length,split,results};
+const dir=new URL('../reports/',import.meta.url);await mkdir(dir,{recursive:true});await writeFile(new URL(split==='holdout'?'evaluation-holdout.json':'evaluation.json',dir),JSON.stringify(report,null,2));
+for(const r of results)console.log(`${r.name}: nDCG@3=${r.metrics.ndcg.toFixed(3)}, P@3=${r.metrics.precision.toFixed(3)}, constraints=${r.metrics.constraintPass.toFixed(3)}`);
+console.log(`Saved ${split} evaluation: ${selected.length}/${EVAL_CASES.length} cases. Synthetic diagnostics only.`);

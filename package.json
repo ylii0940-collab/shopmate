@@ -1,0 +1,17 @@
+{
+  "name": "shopmate-shopping-agent",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Consumer shopping assistant with multi-turn recommendations, comparisons, variants, cart and checkout handoff.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check dist/app.mjs && node --check dist/agent.mjs && node --check dist/search.mjs && node --check dist/strategy-ui.mjs && node --check server.mjs",
+    "evaluate": "node scripts/evaluate.mjs"
+  },
+  "license": "MIT"
+}

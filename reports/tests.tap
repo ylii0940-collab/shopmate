@@ -1,0 +1,208 @@
+TAP version 13
+# Subtest: Shopping budgets support English, Chinese suffixes, Spanish, GBP and IDR
+ok 1 - Shopping budgets support English, Chinese suffixes, Spanish, GBP and IDR
+  ---
+  duration_ms: 2.788
+  type: 'test'
+  ...
+# Subtest: Budget, stock, market, subtype and required features cannot be relaxed
+ok 2 - Budget, stock, market, subtype and required features cannot be relaxed
+  ---
+  duration_ms: 3.571125
+  type: 'test'
+  ...
+# Subtest: No match remains empty rather than filling with unrelated products
+ok 3 - No match remains empty rather than filling with unrelated products
+  ---
+  duration_ms: 0.852333
+  type: 'test'
+  ...
+# Subtest: After-sales is prioritized while return-policy questions remain policy questions
+ok 4 - After-sales is prioritized while return-policy questions remain policy questions
+  ---
+  duration_ms: 0.345167
+  type: 'test'
+  ...
+# Subtest: Multi-turn conversation retains budget and compares exactly the first two
+ok 5 - Multi-turn conversation retains budget and compares exactly the first two
+  ---
+  duration_ms: 9.473666
+  type: 'test'
+  ...
+# Subtest: A new budget keeps the previous category and mandatory features
+ok 6 - A new budget keeps the previous category and mandatory features
+  ---
+  duration_ms: 1.277458
+  type: 'test'
+  ...
+# Subtest: Cheaper follow-up sorts eligible products by price
+ok 7 - Cheaper follow-up sorts eligible products by price
+  ---
+  duration_ms: 1.117542
+  type: 'test'
+  ...
+# Subtest: Changing category clears incompatible old feature constraints
+ok 8 - Changing category clears incompatible old feature constraints
+  ---
+  duration_ms: 0.994
+  type: 'test'
+  ...
+# Subtest: Explicitly removing a requirement changes subsequent filtering
+ok 9 - Explicitly removing a requirement changes subsequent filtering
+  ---
+  duration_ms: 1.235041
+  type: 'test'
+  ...
+# Subtest: Cart commands resolve ordinals but ask for missing variants
+ok 10 - Cart commands resolve ordinals but ask for missing variants
+  ---
+  duration_ms: 0.746458
+  type: 'test'
+  ...
+# Subtest: Ambiguous cart commands without a previous product ask for clarification
+ok 11 - Ambiguous cart commands without a previous product ask for clarification
+  ---
+  duration_ms: 0.116125
+  type: 'test'
+  ...
+# Subtest: Named comparisons resolve full product names without prefix collisions
+ok 12 - Named comparisons resolve full product names without prefix collisions
+  ---
+  duration_ms: 0.306792
+  type: 'test'
+  ...
+# Subtest: Cart requires valid variants and enforces aggregate inventory across colors
+ok 13 - Cart requires valid variants and enforces aggregate inventory across colors
+  ---
+  duration_ms: 0.651125
+  type: 'test'
+  ...
+# Subtest: Checkout recalculates totals from catalog and creates no order or payment
+ok 14 - Checkout recalculates totals from catalog and creates no order or payment
+  ---
+  duration_ms: 0.110125
+  type: 'test'
+  ...
+# Subtest: Output checks reject fabricated catalog names and prices
+ok 15 - Output checks reject fabricated catalog names and prices
+  ---
+  duration_ms: 0.274791
+  type: 'test'
+  ...
+# Subtest: Recall channels deduplicate while filter audit preserves every failed constraint
+ok 16 - Recall channels deduplicate while filter audit preserves every failed constraint
+  ---
+  duration_ms: 2.234792
+  type: 'test'
+  ...
+# Subtest: Spelling and alias normalization preserve explicit prices and product intent
+ok 17 - Spelling and alias normalization preserve explicit prices and product intent
+  ---
+  duration_ms: 2.530708
+  type: 'test'
+  ...
+# Subtest: Every strategy keeps hard constraints even under extreme ranking weights
+ok 18 - Every strategy keeps hard constraints even under extreme ranking weights
+  ---
+  duration_ms: 85.409167
+  type: 'test'
+  ...
+# Subtest: Weighted score components reconcile; zero weights fall back to safe defaults
+ok 19 - Weighted score components reconcile; zero weights fall back to safe defaults
+  ---
+  duration_ms: 0.401167
+  type: 'test'
+  ...
+# Subtest: Brand reranking changes the list without replacing explicit cheaper ordering
+ok 20 - Brand reranking changes the list without replacing explicit cheaper ordering
+  ---
+  duration_ms: 0.490625
+  type: 'test'
+  ...
+# Subtest: Shopper strategy and diagnostics use the exact same engine as the strategy lab
+ok 21 - Shopper strategy and diagnostics use the exact same engine as the strategy lab
+  ---
+  duration_ms: 4.04025
+  type: 'test'
+  ...
+# Subtest: Empty queries in fixed evaluation are judged separately rather than rewarded with perfect ranking
+ok 22 - Empty queries in fixed evaluation are judged separately rather than rewarded with perfect ranking
+  ---
+  duration_ms: 22.108125
+  type: 'test'
+  ...
+# Subtest: Evaluation calculates nDCG and fixed-denominator Precision@3 from independent fixture grades
+ok 23 - Evaluation calculates nDCG and fixed-denominator Precision@3 from independent fixture grades
+  ---
+  duration_ms: 0.120584
+  type: 'test'
+  ...
+# Subtest: Observed funnel deduplicates impressions and links checkout to the same clicked and added product
+ok 24 - Observed funnel deduplicates impressions and links checkout to the same clicked and added product
+  ---
+  duration_ms: 0.763958
+  type: 'test'
+  ...
+# Subtest: Unattributed or unexposed interactions do not enter the search funnel; missing rates stay unknown
+ok 25 - Unattributed or unexposed interactions do not enter the search funnel; missing rates stay unknown
+  ---
+  duration_ms: 0.111333
+  type: 'test'
+  ...
+# Subtest: Quick back uses observed close timing and excludes interactions that later add to cart
+ok 26 - Quick back uses observed close timing and excludes interactions that later add to cart
+  ---
+  duration_ms: 0.070083
+  type: 'test'
+  ...
+# Subtest: Inspecting a follow-up keeps inherited constraints and the explicit price order
+ok 27 - Inspecting a follow-up keeps inherited constraints and the explicit price order
+  ---
+  duration_ms: 2.250459
+  type: 'test'
+  ...
+# Subtest: Expanded catalog and positive labels preserve complete purchasable candidates
+ok 28 - Expanded catalog and positive labels preserve complete purchasable candidates
+  ---
+  duration_ms: 9.983375
+  type: 'test'
+  ...
+# Subtest: Evaluation split has 140 unique inputs and excludes acceptance cases from tuning
+ok 29 - Evaluation split has 140 unique inputs and excludes acceptance cases from tuning
+  ---
+  duration_ms: 18.588125
+  type: 'test'
+  ...
+# Subtest: No model credentials are required for offline analysis
+ok 30 - No model credentials are required for offline analysis
+  ---
+  duration_ms: 0.92575
+  type: 'test'
+  ...
+# Subtest: A configured model cannot raise an explicit budget or override after-sales
+ok 31 - A configured model cannot raise an explicit budget or override after-sales
+  ---
+  duration_ms: 13.813209
+  type: 'test'
+  ...
+# Subtest: Invalid model output falls back to rules
+ok 32 - Invalid model output falls back to rules
+  ---
+  duration_ms: 3.769084
+  type: 'test'
+  ...
+# Subtest: Server serves consumer app and rejects invalid API input, origins, and traversal
+ok 33 - Server serves consumer app and rejects invalid API input, origins, and traversal
+  ---
+  duration_ms: 6.347709
+  type: 'test'
+  ...
+1..33
+# tests 33
+# suites 0
+# pass 33
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 191.866834

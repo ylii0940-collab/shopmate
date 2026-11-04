@@ -1,0 +1,224 @@
+{
+  "project": "ShopMate",
+  "version": "2.1-eval140",
+  "date": "2026-11-04",
+  "catalogSize": 200,
+  "evaluationCases": 140,
+  "tests": {
+    "passed": 33,
+    "failed": 0
+  },
+  "scope": "synthetic catalog and rubric labels; no real commerce uplift",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "3f9d9e5fece7f81ea9cb0cd4b5c2a4897198b9371b2e6e5608e28df3695ce3e2"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "4d36ea9a58694c9aaa0c11dc703210124ecfeddaeef0d584167d1f46116b0a08"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "ad29e44bd13ac0dafc7700ee9909f03ef42e4c653652b661168ab492adc42d72"
+    },
+    {
+      "path": "README.md",
+      "sha256": "dd9ec8d7f85f11382ccf7e5752b7eac03c28c2cfc55cbd24761e1b503ff854d4"
+    },
+    {
+      "path": "dist/agent.mjs",
+      "sha256": "27b3be3259e2161861db96ef9a7c0ccc5e438b0a6b51f79ae915eb3fc8ac5096"
+    },
+    {
+      "path": "dist/app.mjs",
+      "sha256": "7d9f4fa2770c758c8faa5a52e95539ebfaaddd29cd7df5ae18377769af89d3b2"
+    },
+    {
+      "path": "dist/art.mjs",
+      "sha256": "73bee89c05154def97927ec78d4a0d40bda6d06911dbf35f607e8aa00c6ea1e2"
+    },
+    {
+      "path": "dist/catalog-extra.mjs",
+      "sha256": "114286c9ae1c6a1b607b0d73424f7475749ec8041bdc6cf2c0ff500c7ff524ca"
+    },
+    {
+      "path": "dist/data.mjs",
+      "sha256": "0a52b0a0498ace73502f1f3f70ef0ddca7a5a77d44fdcdd5100557e81f5c3ca0"
+    },
+    {
+      "path": "dist/engine.mjs",
+      "sha256": "688a3a0dc3597f396c3d3f72820ad6c3a962c4101241fdca00bc182e32eb304a"
+    },
+    {
+      "path": "dist/eval-data.mjs",
+      "sha256": "8869135e00974f5bb64754f248d32947368f7c16117c098174ec925d16c74a67"
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "90c02cac298dbc45ea80e028db484ae2e7417024adacdd490ecd7a6bb37bbe5c"
+    },
+    {
+      "path": "dist/project-brief.md",
+      "sha256": "274fbdd436ee026f2d7bfd527dad3e48127c81cc33cfa7c8cfe74e126e8a4d51"
+    },
+    {
+      "path": "dist/search.mjs",
+      "sha256": "d84239dc68dd315ffb2e542dbb31870f61cd89a8ae03fb677d404f3a7c6f5f67"
+    },
+    {
+      "path": "dist/strategy-ui.mjs",
+      "sha256": "8d368b41b95757a111e08d7aa75797287b65342e67c45f971400db850e428631"
+    },
+    {
+      "path": "dist/styles.css",
+      "sha256": "8a941b8e0951a1721565e857878e5699b388dbd84645c7eb15c79160bf8ba706"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "a86b6d33ef9a632d152433e21d474ef794227a93af3fa179419d39d626129783"
+    },
+    {
+      "path": "docs/CATALOG-EXPANSION.md",
+      "sha256": "0e14a60add84798a3935d12651f653ba5e402b16a5710a33129d17b9e6c7e0dd"
+    },
+    {
+      "path": "docs/DEMO.md",
+      "sha256": "e35b12bd457b7ea6ab6fa3daa9d4b09838a2a5068d4b94c2d59cedfebc9c828a"
+    },
+    {
+      "path": "docs/EVALUATION-140.md",
+      "sha256": "7a69c50564a5c63061515a156ef2008a35d8d350e5457b0e0dbdaba5a7732296"
+    },
+    {
+      "path": "docs/METRICS.md",
+      "sha256": "21d78a238465919e4512fd54a7be7f4af8d8db4574e5d6390b0668c96a9b8b3a"
+    },
+    {
+      "path": "docs/PRODUCT.md",
+      "sha256": "0a48d2213419c493b9f7c9b7b0b998837e6a6796f66d831b73700ec4a683b558"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "sha256": "55b7b75714c17709d7fd19293be4c29f0f25cc0281897eb6a5b3be123a936218"
+    },
+    {
+      "path": "docs/flowcharts/01-消费者导购全流程.mmd",
+      "sha256": "0dba125b27d21c0e239297e65a29ba0db79ad1cd47f7aaa666ba673b64064030"
+    },
+    {
+      "path": "docs/搜索策略与AI导购.md",
+      "sha256": "e137a38966011c08f947589faa58d909ce4df77c24b083cff1cca21b7bd63498"
+    },
+    {
+      "path": "docs/项目流程图.md",
+      "sha256": "5538195596700abfa2d944be26ad624c056936ccd17d82e4b17e730766c7c27d"
+    },
+    {
+      "path": "docs/项目流程图.mmd",
+      "sha256": "0dba125b27d21c0e239297e65a29ba0db79ad1cd47f7aaa666ba673b64064030"
+    },
+    {
+      "path": "docs/项目详细流程图.md",
+      "sha256": "700d3c2d236c68c2083cabdf1482de4bb537ecb4355fba793203c06a1d5a8a28"
+    },
+    {
+      "path": "package.json",
+      "sha256": "bdd310122264b766f68f5844c8adb3e5b162c4574328f6b0427154378e0e0e94"
+    },
+    {
+      "path": "reports/archive/eval-catalog40.mjs",
+      "sha256": "024b992ec4b7cb99f6fc2a697d1c4055dd4d7ff3ad523f86263cb1d78f5cc531"
+    },
+    {
+      "path": "reports/archive/evaluation-catalog40.json",
+      "sha256": "1b461671d845c9bb4fdd5c4b6c18bbd62668b41cf086ac2bda3171e707d23651"
+    },
+    {
+      "path": "reports/evaluation.json",
+      "sha256": "c17e7e945d26110424e7632ccb154867b31b1b74492f53a067b9f3ed108eaebd"
+    },
+    {
+      "path": "reports/tests.tap",
+      "sha256": "77c4eec758d5f3a92f6da266f21d7a68471fa0025bb368f1402b6a3e2b1ed904"
+    },
+    {
+      "path": "screenshots/01-workspace.png",
+      "sha256": "21e70c5b0f20bf6d837bd300bdf589ab33a2bc25eab121b19e18f8baf077e50e"
+    },
+    {
+      "path": "screenshots/02-comparison.png",
+      "sha256": "7d0c4ac6c4126a1ed0a84bd6598b69110f1fce0cb1c78d9da7a57d8c540eb409"
+    },
+    {
+      "path": "screenshots/03-checkout.png",
+      "sha256": "c7431a46d1d34ca2c62e262ec3ace0a434f774a9a0a1bf0e522e1f6f66adc149"
+    },
+    {
+      "path": "screenshots/04-search-strategies.png",
+      "sha256": "7045b4b039872978e59c4e19b48ac1e7a1646ae7f961fc37b2c2f101bff083b8"
+    },
+    {
+      "path": "screenshots/05-offline-evaluation.png",
+      "sha256": "deeb6a8da196f379f168f71ab5cb7df8a0913f49293269012aeb4fc52539eab8"
+    },
+    {
+      "path": "screenshots/06-strategy-decision.png",
+      "sha256": "ef3f9664c9b8816a5bcc45c08f83ba2b67ce17f0130964cf9f221ba8707d34e8"
+    },
+    {
+      "path": "screenshots/07-catalog200.png",
+      "sha256": "3617d855da6b5bb1afea399af89a1c4a79c45cdb9df37210ea2596ef9692a208"
+    },
+    {
+      "path": "scripts/build-evaluation.mjs",
+      "sha256": "6abe6f112f1861587f873da694d87f676355ea83097cccb0c2f9dfa97af31fd1"
+    },
+    {
+      "path": "scripts/evaluate.mjs",
+      "sha256": "2d3780f8e27d2b8a36493c87e796362b067f30aca42d902bd867e7120105e88e"
+    },
+    {
+      "path": "scripts/expand-catalog.mjs",
+      "sha256": "986af3c2d5861826dcd93cb53f29bf522803999a6bce8491bdf040a1b5acbc68"
+    },
+    {
+      "path": "server.mjs",
+      "sha256": "a8fe9f4103b57bf49e7fff3b022740a3c1784dee223d7267eb055372509dbedd"
+    },
+    {
+      "path": "tests/engine.test.mjs",
+      "sha256": "a1da5e8345d1ecb6c8d33e916456eeaaf35440e70bbe7bcd5ca43d2924810798"
+    },
+    {
+      "path": "tests/search.test.mjs",
+      "sha256": "3f4f8ceaea416e5decd4cc8f9537c641acd9e35a9ca55d0bcbe895f408cc3162"
+    },
+    {
+      "path": "tests/server.test.mjs",
+      "sha256": "b03796de5dd8755f3d5fa9051bfc4de813a431209601e3720a9730eae11f657c"
+    },
+    {
+      "path": "先看这里.md",
+      "sha256": "069e3fec3df86380d17ee46d87c69d20aebd89767d1d9652a3050d5335cb3c7e"
+    },
+    {
+      "path": "启动LivePilot.command",
+      "sha256": "81758e85bfcd67c51e195b14c47b4d1f8aab95413ee787a7b865857be4f3e2b3"
+    },
+    {
+      "path": "启动ShopMate.command",
+      "sha256": "81758e85bfcd67c51e195b14c47b4d1f8aab95413ee787a7b865857be4f3e2b3"
+    },
+    {
+      "path": "在线访问.md",
+      "sha256": "86ec3bee8347d5e3ea1f06063100e04e720b34a521440adcc17c2af98bc2a952"
+    },
+    {
+      "path": "在线预览.webloc",
+      "sha256": "388fcde73be2da3f1291297b2c5191752ef892f11374dd79c1d4b3f6171dd464"
+    }
+  ],
+  "developmentCases": 112,
+  "holdoutCases": 28
+}
